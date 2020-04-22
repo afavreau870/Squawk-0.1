@@ -1,0 +1,38 @@
+extends layout
+
+block header
+  header
+   h3.logo (Insert Logo here) Squawk Radio Training
+   select(name='airport')
+    each val in airports
+       option=val
+ 
+    
+block content 
+
+  .sidenav
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')  
+    button(onclick= 'redirAirports()') Airports
+    script.
+      function redirAirports(){
+        window.location.href = '/airports';
+      }
+    button(onclick="navMyRecordings()") My Recordings
+    button.btn(class = button href='#') Services
+    button.btn(class = button href='#') Clients
+    button.btn(class = button href='#') Contact
+  .leftarrow
+    button.fa.fa-arrow-circle-left(class=leftarrow aria-hidden='true' ) 
+   
+  
+  body
+  .radio
+    .play
+       button.fa.fa-play
+       
+ 
+       
+
+block footer
+  footer
+    p Squawk Radio Training

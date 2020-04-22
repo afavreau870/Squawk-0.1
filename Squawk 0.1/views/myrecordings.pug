@@ -1,0 +1,38 @@
+extends layout
+
+block header
+  header
+   h3.logo (Insert Logo here) Squawk Radio Training
+   input(
+    type="dropDown"
+    "name"="airport"
+    'placeholder'="Search Airports"
+    readonly=false
+    required
+   )
+    
+block content 
+
+  .sidenav
+
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')  
+    button(onclick="move()") Home
+    button.btn(class = button onclick = href='#') Airports
+    button.btn(class = button href='#') Services
+    button.btn(class = button href='#') Clients
+    button.btn(class = button href='#') Contact
+  .leftarrow
+    button.fa.fa-arrow-circle-left(class=leftarrow aria-hidden='true' ) 
+ 
+
+  body
+   .primary
+    h1=title
+    
+    p Welcome to #{title}
+    p #{show}
+   
+
+block footer
+  footer
+    p Squawk Radio Training

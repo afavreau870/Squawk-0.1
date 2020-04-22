@@ -1,0 +1,41 @@
+extends layout
+
+
+block header
+  header
+   h3 (Insert Logo here) Squawk Radio Training
+   input(
+    type="dropDown"
+    "name"="airport"
+    'placeholder'="Search Airports"
+    readonly=false
+    required
+)
+    
+block content 
+  .sidenav
+    button.btn()
+    
+    button(onclick="move()") Airports
+      script.
+        function move(){
+        window.location.href = '/airports'
+       }
+    button.btn(class = button onclick = href='#') My Recordings
+    button.btn(class = button href='#') Services
+    button.btn(class = button href='#') Clients
+    button.btn(class = button href='#') Contact
+    a(href='#')
+        i.fa.fa-arrow-up
+  
+  body
+   .primary
+    h1=title
+    
+    p Welcome to #{title}
+    p #{show}
+
+
+block footer
+  footer
+    p Squawk Radio Training

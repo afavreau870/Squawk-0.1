@@ -1,0 +1,124 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+input {
+    position: absolute;
+    right: 100px;
+    top: 35%;
+}
+select {
+    position: absolute;
+    right: 100px;
+    top: 35%;
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.header {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #1abc9c;
+    color: white;
+    height: 10%;
+}
+
+.title {
+    display: inline-block;
+    margin: 0;
+    top: 90%
+}
+
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    height: 5%;
+}
+
+.headerButton {
+    width: 15px;
+    height: 3px;
+    background-color: grey;
+    margin: 2px 0;
+    color: black
+}
+
+
+.center {
+    text-align: center;
+    height: 500px;
+    top: 20%;
+    left: 50%;
+}
+
+.sidenav {
+    height: 85%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 10%; /* Stay at the top */
+    left: 0;
+    background-color: #B8B8B8; /* Gray */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+button {
+    top: 0;
+    left: 40%;
+    width: 100%;
+}
+
+.leftarrow {
+    position: fixed;
+    left: 8.6%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+.left-collapse {
+    height: 85%; /* Full-height: remove this if you want "auto" height */
+    width: 15px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 10%; /* Stay at the top */
+    left: 0;
+    background-color: #B8B8B8; /* Gray */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.radio {
+    position: absolute;
+    text-align: center;
+    height: 10%;
+    width: 25%;
+    top: 20%;
+    left: 33%;
+    border-color: dimgray;
+    border: solid;
+    background-color: lightgray;
+}
+
+.play{
+    width:25px;
+}
+
+
+

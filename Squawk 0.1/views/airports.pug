@@ -1,0 +1,27 @@
+extends index
+
+
+block header
+  header
+   h3.logo (Insert Logo here) Squawk Radio Training
+   input(
+    type="dropDown"
+    "name"="airport"
+    'placeholder'="Search Airports"
+    readonly=false
+    required
+)
+    
+block content 
+  
+  body
+   .primary
+    h1=Airports
+    p Welcome to #{title}
+    p #{show}
+   
+
+
+block footer
+  footer
+    p Squawk Radio Training
